@@ -1,0 +1,23 @@
+.palette{
+    display : flex;
+    justify-content: center;
+}
+.color {
+    width: 40px;
+    height: 40px;
+    opacity: 0.5;
+    transition: all 0,2s;
+    cursor : pointer;
+}
+
+.color:hover {
+    opacity: 0.75;
+}
+
+.color.active, .color:active{
+    opacity: 1;
+}
+
+.color + .color {
+    margin-left: 10px;
+}

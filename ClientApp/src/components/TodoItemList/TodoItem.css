@@ -1,0 +1,40 @@
+.todo-item{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.15s;
+    user-select: none;
+}
+.todo-item:hover{
+    background: #e9ecef;
+}
+.todo-item:hover .remove{
+    opacity : 1;
+}/* todo-item에 마우스가 있을때 만 .remove 보이기*/
+.todo-item + .todo-item{ /* todo-item 사이 윗 테두리*/
+    border-top: 1px solid #f1f3f5;
+}
+
+.remove{
+    margin-right: 10px;
+    color: #e64980;
+    font-weight: 600;
+    opacity: 0;
+}
+
+.todo-text{
+    flex:1;
+    word-break: break-all;
+}
+.checked{
+    text-decoration: line-through;
+    color:#adb5bd;
+}
+.check-mark{
+    font-size: 15px;
+    line-height: 10px;
+    margin-left: 10px;
+    color: #3bc9db;
+    font-weight: 800;
+}
